@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Urbanist', sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(to bottom, #312d2d, #3e3c3c);
+}
+
+::-webkit-scrollbar{
+    background: linear-gradient(to bottom, #313030,#575555);
+}
+
+body{
+    background: linear-gradient(to right, #323232, #000000);
+}
+
+header.headerContainer{
+    background: linear-gradient(to bottom, #0c0731, #08012e);
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+    border-bottom: 1px solid #ffffff30;
+}
+
+header.headerContainer img{
+    width: 150px;
+    height: 100px;
+}
+
+nav, ul{
+    display: flex;
+}
+
+nav ul li a{
+    color: #ffffff;
+    font-size: 1.3rem;
+    margin: 0 10px;
+    position: relative;
+}
+
+
+nav ul li a.titleContaint{
+    margin-right: 90px;
+}
+
+nav ul li a::before{
+    content:"";
+    position: absolute;
+    bottom: 0;
+    left: 0; 
+    background: linear-gradient(to left, #9b9a9a,#fffc53);
+    width: 0%;
+    height: 2px;
+    transition: all 0.4s ease-in-out;
+}
+
+nav ul li a:hover::before{
+    width: 100%;
+}
+
+section.contaContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid #ffffff30;
+    padding: 0 40px;
+}
+
+section.contaContainer a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, #0644a0,#ecff80);
+    color: #ffffff;
+    width: 180px;
+    height: 4vh;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+section.contaContainer a:hover{
+    background: linear-gradient(to left, #eef192,#4184e9d3);}
+
+main.mainContainer{
+    max-width: 1560px;
+    margin: 8% auto;
+}
+
+section.titleContainer h1{
+    color: #ffffff;
+    font-size: 3.5rem;
+    width: 700px;
+}
+
+section.titleContainer span{
+    background: linear-gradient(to right, #eef192,#4184e9d3);
+    background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: black;
+}
+
+section.titleContainer p{
+    color: #cccccc;
+    font-size: 1.3rem; 
+    width: 700px;
+    text-align: justify;
+    margin: 20px 0;
+}
+
+form input{
+    display: block;
+}
+
+form input{
+    width: 45%;
+    height: 6vh;
+    background-color: #171717;
+    border: 1px solid #ffffff30;
+    padding: 0 20px;
+    outline: none;
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+form input:focus{
+    border: 1px solid #fbff00; 
+    color: #fff;
+}
+
+form input[type="submit"]{
+    background-image: linear-gradient(to right, #babe8c,#427dec);
+    color: #ffffff;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover{
+    background: linear-gradient(to right, #eef192,#4184e9d3);
+}
+
+section.imgContainer{
+    position: absolute;
+    top:56%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+}
+
+section.imgContainer img{
+    width: 450px;
+    height: 450px;
+}
+
+.imgContainer img{
+    animation: floatinganimation 5s infinite;
+}
+
+@keyframes floatinganimation{
+    0%, 100%{
+        transform: translateY(5%) ;
+    }
+    50%{
+        transform: translateY(-19px);
+    }
+}
+
+section.python{
+    width: 100%;
+    height: 100vh;
+    padding: 30px;
+    font-size: 1.5rem;
+    margin:10px;
+}
+
+section.python p{
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.claspy{
+    color: #fff;
+}
+
+.linkpy{
+    color: #ecff80;
+    cursor: pointer;
+}
+
+.linkpy:hover{
+color: #4490e7;
+font-size: large;
+
+}
+
